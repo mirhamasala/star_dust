@@ -1,0 +1,23 @@
+:root {
+  --background: hsl(260, 23%, 7%);
+  --glow-dark: hsl(154, 99%, 55%);
+  --pale-light: hsl(164, 67%, 70%);
+}
+
+body {
+    margin: 0;
+}
+
+.sky {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: var(--background);
+}
+
+.star {
+    font-size: 60px;
+    color: var(--pale-light);
+    text-shadow: none;
+/*  transition: color 200ms, text-shadow 200ms;
+    transition-delay: 0;*/
+}

@@ -14,10 +14,28 @@ body {
     background: var(--background);
 }
 
-.star {
+.fa-star {
     font-size: 60px;
     color: var(--pale-light);
     text-shadow: none;
-/*  transition: color 200ms, text-shadow 200ms;
-    transition-delay: 0;*/
+    opacity: 0;
+    animation: fade 1500ms ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        color: var(--pale-light);
+        text-shadow: none;
+    }
+    50% {
+        opacity: 1;
+        color: var(--glow-dark);
+        text-shadow: var(--glow-dark) 0 0 20px;
+    }
+    100% {
+        opacity: 0;
+        color: var(--pale-light);
+        text-shadow: none;
+    }
 }

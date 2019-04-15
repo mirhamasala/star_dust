@@ -22,7 +22,7 @@ function messenger(mes) {
 
 function showStar() {
     start = new Date().getTime();
-    myBox();
+    playArea.timer = setTimeout(myBox, rand(2000));
 }
 
 function myBox() {
@@ -31,7 +31,7 @@ function myBox() {
     sky.appendChild(el);
     el.style.top = `${rand(150)}px`;
     el.style.left = `${rand(100)}px`;
-    el.style.fontSize = `${rand(100)}px`
+    el.style.fontSize = `${rand(100) + 15}px`
 }
 
 function rand(num) {

@@ -55,6 +55,7 @@ If you have a click event handler on a touch screen, it takes 200ms to register 
 
 - [Animating movement with translate3d](https://www.oreilly.com/ideas/animating-movement-with-translate3d)
 - [Creating Elements with JS](https://htmldog.com/guides/javascript/advanced/creatingelements/)
+- [Getting the Mouse Click Position](https://www.kirupa.com/html5/getting_mouse_click_position.htm)
 - [Move Element to Click Position](https://www.kirupa.com/snippets/move_element_to_click_position.htm)
 - [Move Element to Mouse Click Position](https://www.youtube.com/watch?v=b4GwvdhrEQg) 🎥
 - [Transitions vs Animation](https://cssanimation.rocks/transition-vs-animation/)

@@ -3,12 +3,19 @@ const button = document.querySelector('button');
 const sky = document.querySelector('.sky');
 let inPlay = false;
 
+messenger("Hit the start button..");
+
 button.addEventListener('click', function() {
     if (!inPlay) {
         inPlay = true;
         button.style.display = "none";
+        messenger("Turn the stars to dust as quickly as you can!");
     }
 })
+
+function messenger(mes) {
+    message.innerHTML = mes;
+}
 
 // const star = document.querySelector('.fa-star');
 // const sky = document.querySelector('.sky');

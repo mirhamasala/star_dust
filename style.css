@@ -5,14 +5,11 @@
 }
 
 body {
-    margin: 0;
-}
-
-.sky {
+    background: var(--background);
     min-height: 100vh;
     min-width: 100vw;
     overflow: hidden;
-    background: var(--background);
+    margin: 0;
 }
 
 .fa-star {

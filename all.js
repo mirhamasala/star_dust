@@ -22,7 +22,11 @@ function messenger(mes) {
 
 function showStar() {
     start = new Date().getTime();
+}
 
+function rand(num) {
+    let tempVal = Math.floor(Math.random() * num);
+    return tempVal;
 }
 
 // const star = document.querySelector('.fa-star');

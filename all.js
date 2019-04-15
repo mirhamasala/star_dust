@@ -5,6 +5,7 @@ sky.addEventListener('click', handleClick, false);
 
 function handleClick(event) {
     star.classList.remove('glow');
+    star.style.fontSize = `${Math.floor((Math.random() * 65) + 25)}px`;
     moveStar(event);
     addGlow();
 }

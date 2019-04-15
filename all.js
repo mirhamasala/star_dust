@@ -1,8 +1,14 @@
 const message = document.querySelector('.message');
 const button = document.querySelector('button');
 const sky = document.querySelector('.sky');
+let inPlay = false;
 
-console.log(button);
+button.addEventListener('click', function() {
+    if (!inPlay) {
+        inPlay = true;
+        button.style.display = "none";
+    }
+})
 
 // const star = document.querySelector('.fa-star');
 // const sky = document.querySelector('.sky');

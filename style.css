@@ -11,6 +11,7 @@ body {
 .sky {
     min-height: 100vh;
     min-width: 100vw;
+    overflow: hidden;
     background: var(--background);
 }
 
@@ -19,7 +20,7 @@ body {
     color: var(--pale-light);
     text-shadow: none;
     opacity: 0;
-    transform: translate3d(50px, 50px, 0);
+    /* transform: translate3d(50px, 50px, 0); */
 }
 
 .fa-star.glow {
@@ -30,17 +31,14 @@ body {
 @keyframes fade {
     0% {
         opacity: 0;
-        color: var(--pale-light);
-        text-shadow: none;
     }
     50% {
-        opacity: 1;
         color: var(--glow-dark);
-        text-shadow: var(--glow-dark) 0 0 20px;
+        text-shadow: var(--glow-dark) 0 0 30px;
+        opacity: 1;
     }
     100% {
+        text-shadow: var(--glow-dark) 0 0 40px;
         opacity: 0;
-        color: var(--pale-light);
-        text-shadow: none;
     }
 }

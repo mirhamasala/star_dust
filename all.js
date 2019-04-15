@@ -3,7 +3,6 @@ const button = document.querySelector('button');
 const sky = document.querySelector('.sky');
 let inPlay = false;
 let playArea = {};
-let start;
 
 messenger("Hit the start button..");
 
@@ -21,8 +20,7 @@ function messenger(mes) {
 }
 
 function showStar() {
-    start = new Date().getTime();
-    playArea.timer = setTimeout(myBox, rand(2000));
+    playArea.timer = setTimeout(myBox, rand(1500));
 }
 
 function myBox() {
@@ -31,7 +29,19 @@ function myBox() {
     sky.appendChild(el);
     el.style.top = `${rand(150)}px`;
     el.style.left = `${rand(100)}px`;
-    el.style.fontSize = `${rand(100) + 15}px`
+    el.style.fontSize = `${rand(100) + 15}px`;
+    el.start = new Date().getTime();
+    el.addEventListener('click', hit);
+}
+
+function hit(event) {
+    let start = event.target.start;
+    let end = new Date().getTime();
+    let duration = (end - start)/1000;
+    messenger(`It took you ${duration} seconds to click`);
+    clearTimeout(playArea.timer);
+    sky.children[0].remove();
+    showStar();
 }
 
 function rand(num) {

@@ -2,6 +2,8 @@ const message = document.querySelector('.message');
 const button = document.querySelector('button');
 const sky = document.querySelector('.sky');
 let inPlay = false;
+let playArea = {};
+let start;
 
 messenger("Hit the start button..");
 
@@ -10,11 +12,17 @@ button.addEventListener('click', function() {
         inPlay = true;
         button.style.display = "none";
         messenger("Turn the stars to dust as quickly as you can!");
+        showStar();
     }
 })
 
 function messenger(mes) {
     message.innerHTML = mes;
+}
+
+function showStar() {
+    start = new Date().getTime();
+
 }
 
 // const star = document.querySelector('.fa-star');

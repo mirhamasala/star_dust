@@ -23,6 +23,7 @@ body {
 }
 
 .fa-star.glow {
+    will-change: transform;
     animation: fade 1500ms ease-in-out;
 }
 

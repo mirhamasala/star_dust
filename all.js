@@ -22,6 +22,16 @@ function messenger(mes) {
 
 function showStar() {
     start = new Date().getTime();
+    myBox();
+}
+
+function myBox() {
+    let el = document.createElement("i");
+    el.setAttribute('class', 'fas fa-star');
+    sky.appendChild(el);
+    el.style.top = `${rand(150)}px`;
+    el.style.left = `${rand(100)}px`;
+    el.style.fontSize = `${rand(100)}px`
 }
 
 function rand(num) {

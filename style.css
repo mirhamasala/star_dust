@@ -14,10 +14,10 @@ body {
 }
 
 .fa-star {
+    position: relative;
     font-size: 60px;
-    color: var(--pale-light);
-    text-shadow: none;
-    opacity: 0;
+    color: var(--glow-dark);
+    text-shadow: var(--glow-dark) 0 0 10px;
     /* transform: translate3d(50px, 50px, 0); */
 }
 

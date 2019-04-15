@@ -19,7 +19,7 @@ Using a transition to animate the `transform` property
 
 **Source:** <https://www.kirupa.com/snippets/move_element_to_click_position.htm>
 
-## Round 2
+## Notes from Lars
 
 The main difference between our code is that I used position `relative`/`absolute` to place the stars on the `body`–`body` being the parent relative element.
 
@@ -29,10 +29,18 @@ Then on rendering the element the animation is run.
 
 And I have an event listener for `animationend` which removes the element from the page after the animation concludes.
 
+---
+
+Click events have a 200ms delay on touch screens. So I looked into `touchstart`, but then I was getting double stars. Turns out a touch event also triggers a click event, weird mobile behavior. That’s why I have some conditions set for that in my code.
+
+If you have a click event handler on a touch screen, it takes 200ms to register because it looks for a `touchstart` first. It’s a built-in pause so if you want to get around that you have to listen to `touchstart`.
+
 ## Look up
+
 - [x] Animations
 - [x] Transitions
 - [x] `transform` property
+- [ ] `Math.floor()`, `Math.random()`
 
 ### Notes
 
